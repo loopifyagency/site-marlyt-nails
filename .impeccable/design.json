@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T15:35:22Z",
+  "title": "Design System: Marlyt_nails",
+  "extensions": {
+    "colorMeta": {
+      "cerise": {
+        "role": "primary",
+        "displayName": "Cerise",
+        "canonical": "#C8123F",
+        "tonalRamp": [
+          "#400617",
+          "#630921",
+          "#860C2C",
+          "#A90F36",
+          "#C8123F",
+          "#D85878",
+          "#E99EB1",
+          "#F7D9E0"
+        ]
+      },
+      "fuchsia": {
+        "role": "secondary",
+        "displayName": "Fuchsia",
+        "canonical": "#C9187C",
+        "tonalRamp": [
+          "#400825",
+          "#640C3B",
+          "#861051",
+          "#AA1468",
+          "#C9187C",
+          "#D95CA3",
+          "#E9A1C9",
+          "#F7DAEA"
+        ]
+      },
+      "dragee": {
+        "role": "tertiary",
+        "displayName": "Dragée",
+        "canonical": "#FFD9E5",
+        "tonalRamp": [
+          "#4C323C",
+          "#7A5D67",
+          "#A88893",
+          "#D6B2BE",
+          "#FFD9E5",
+          "#FFE4EC",
+          "#FFEEF3",
+          "#FFF7F9"
+        ]
+      },
+      "blanc-neige": {
+        "role": "neutral",
+        "displayName": "Blanc neige",
+        "canonical": "#FFF9FB",
+        "tonalRamp": [
+          "#4C3941",
+          "#7A6A70",
+          "#A89CA0",
+          "#D6CDD0",
+          "#FFF9FB",
+          "#FFFAFC",
+          "#FFFBFC",
+          "#FFFCFD"
+        ]
+      },
+      "griotte": {
+        "role": "neutral",
+        "displayName": "Griotte",
+        "canonical": "#3B0716",
+        "tonalRamp": [
+          "#21040E",
+          "#280510",
+          "#2E0512",
+          "#350614",
+          "#3B0716",
+          "#76505B",
+          "#B19AA1",
+          "#E2D7DA"
+        ]
+      },
+      "givre": {
+        "role": "neutral",
+        "displayName": "Givre",
+        "canonical": "#E9E7EE",
+        "tonalRamp": [
+          "#48353E",
+          "#71636B",
+          "#9A9098",
+          "#C4BEC5",
+          "#E9E7EE",
+          "#F0EDF2",
+          "#F6F4F7",
+          "#FCF9FB"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Mot-symbole « Marlyt_nails » (hero, pied de page)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titres de section, révélés mot par mot."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Noms de prestations, d'étapes, de clientes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texte courant, mesure 34 à 62ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Étiquettes de teinte et numéros tabulaires."
+      }
+    },
+    "shadows": [
+      {
+        "name": "swatch",
+        "value": "drop-shadow(0 16px 14px rgba(59,7,22,.2))",
+        "purpose": "Échantillons de teinte, suit la découpe d'ongle."
+      },
+      {
+        "name": "card",
+        "value": "0 28px 40px -22px rgba(0,0,0,.55)",
+        "purpose": "Cartes de prestation."
+      },
+      {
+        "name": "frame",
+        "value": "0 30px 40px -24px rgba(59,7,22,.6)",
+        "purpose": "Cadres photo de la galerie."
+      },
+      {
+        "name": "ticket",
+        "value": "drop-shadow(0 22px 18px rgba(59,7,22,.28))",
+        "purpose": "Étiquettes suspendues."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Interactions et révélations (hover, boutons, reveals)."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Déplacements à l'écran (rideau du loader)."
+      },
+      {
+        "name": "expo.out",
+        "value": "GSAP expo.out, 1.1 à 1.4 s",
+        "purpose": "Titres mot par mot, lettres du mot-symbole."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop-motion",
+        "value": "901px"
+      },
+      {
+        "name": "tablet",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton d'action",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Pilule cerise à remplissage montant ; l'action principale (appeler).",
+      "html": "<a class=\"ds-btn\" href=\"#\">Prendre rendez-vous</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;gap:.6em;min-height:52px;padding:.95em 1.7em;border:2px solid #C8123F;border-radius:999px;background:#C8123F;color:#FFF9FB;font:700 1rem/1.1 'Hanken Grotesk',system-ui,sans-serif;position:relative;overflow:hidden;isolation:isolate;cursor:pointer;transition:transform .18s cubic-bezier(.23,1,.32,1),color .35s cubic-bezier(.23,1,.32,1)}.ds-btn::before{content:\"\";position:absolute;inset:-2px;z-index:-1;background:#3B0716;transform:translateY(101%);transition:transform .5s cubic-bezier(.23,1,.32,1)}.ds-btn:hover::before,.ds-btn:focus-visible::before{transform:translateY(0)}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid #C8123F;outline-offset:3px}"
+    },
+    {
+      "name": "Bouton clair",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Blanc neige sur aplat saturé, remplissage griotte au survol.",
+      "html": "<a class=\"ds-btn-light\" href=\"#\">Prendre rendez-vous</a>",
+      "css": ".ds-btn-light{display:inline-flex;align-items:center;min-height:52px;padding:.95em 1.7em;border:2px solid #FFF9FB;border-radius:999px;background:#FFF9FB;color:#C8123F;font:700 1rem/1.1 'Hanken Grotesk',system-ui,sans-serif;text-decoration:none;transition:background-color .35s cubic-bezier(.23,1,.32,1),color .35s cubic-bezier(.23,1,.32,1),transform .18s cubic-bezier(.23,1,.32,1)}.ds-btn-light:hover,.ds-btn-light:focus-visible{background:#3B0716;color:#FFF9FB}.ds-btn-light:active{transform:scale(.97)}.ds-btn-light:focus-visible{outline:3px solid #FFF9FB;outline-offset:3px}"
+    },
+    {
+      "name": "Échantillon de teinte",
+      "kind": "chip",
+      "refersTo": "tag-teinte",
+      "description": "Forme d'ongle pleine teinte, éclat de brillance, ticket numéroté.",
+      "html": "<button class=\"ds-chip\" type=\"button\"><span class=\"ds-chip-nail\"></span><span class=\"ds-chip-tag\"><b>N°04</b>Cerise</span></button>",
+      "css": ".ds-chip{position:relative;display:block;width:120px;padding:0;border:0;background:none;filter:drop-shadow(0 16px 14px rgba(59,7,22,.2));transition:transform .4s cubic-bezier(.23,1,.32,1);cursor:pointer}.ds-chip:hover{transform:translateY(-14px)}.ds-chip:active{transform:translateY(-4px) scale(.97)}.ds-chip-nail{display:block;aspect-ratio:1/1.9;background:#C8123F;border-radius:50% 50% 46% 46%/34% 34% 22% 22%;background-image:linear-gradient(105deg,transparent 26%,rgba(255,255,255,.55) 35%,rgba(255,255,255,.1) 41%,transparent 47%)}.ds-chip-tag{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);padding:.42em .7em;border-radius:3px;background:#FFF9FB;color:#3B0716;font:700 .75rem/1.2 'Hanken Grotesk',system-ui,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 3px 8px -2px rgba(59,7,22,.35)}.ds-chip-tag b{display:block;letter-spacing:.1em;color:#C8123F;font-variant-numeric:tabular-nums}.ds-chip:focus-visible{outline:3px solid #C8123F;outline-offset:8px}"
+    },
+    {
+      "name": "Carte de prestation",
+      "kind": "card",
+      "refersTo": "card-prestation",
+      "description": "Une teinte pleine, découpe d'ongle, numéro de teinte, appel à l'action.",
+      "html": "<article class=\"ds-card\"><p class=\"ds-card-no\">N°04</p><h3>Semi-permanent</h3><p>Une couleur pleine, brillante, nette jusqu'aux bords.</p><a href=\"#\">Réserver cette pose</a></article>",
+      "css": ".ds-card{position:relative;width:300px;padding:24px;border-radius:16px;background:#C8123F;color:#FFF9FB;box-shadow:0 28px 40px -22px rgba(0,0,0,.55);font-family:'Hanken Grotesk',system-ui,sans-serif}.ds-card-no{position:absolute;right:22px;top:18px;margin:0;font:400 2.4rem/1 'Caprasimo',Georgia,serif;color:#FFD9E5}.ds-card h3{margin:96px 0 0;font:400 1.8rem/1.05 'Caprasimo',Georgia,serif}.ds-card p{margin:.7em 0 0;line-height:1.5}.ds-card a{display:inline-block;margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,249,251,.35);color:#FFF9FB;font-weight:700;text-decoration:none}.ds-card a:hover,.ds-card a:focus-visible{text-decoration:underline}"
+    },
+    {
+      "name": "Étiquette suspendue",
+      "kind": "custom",
+      "refersTo": "blade-avis",
+      "description": "Chiffre géant sur étiquette à coins coupés, accrochée à un rail.",
+      "html": "<div class=\"ds-ticket\"><span class=\"ds-hole\"></span><div class=\"ds-body\"><p class=\"ds-num\">31<small>h</small></p><p class=\"ds-label\">d'ouverture chaque semaine</p></div></div>",
+      "css": ".ds-ticket{position:relative;width:260px;transform:rotate(1.8deg);transform-origin:50% 0;filter:drop-shadow(0 22px 18px rgba(59,7,22,.28))}.ds-hole{position:absolute;z-index:2;left:50%;top:20px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:#E9E7EE;box-shadow:inset 0 1px 3px rgba(0,0,0,.35)}.ds-body{padding:56px 24px 30px;background:#C9187C;color:#FFF9FB;clip-path:polygon(0 26px,26px 0,calc(100% - 26px) 0,100% 26px,100% 100%,0 100%)}.ds-num{margin:0;font:400 6rem/.9 'Caprasimo',Georgia,serif;font-variant-numeric:tabular-nums}.ds-num small{font-size:.4em}.ds-label{margin:.8em 0 0;font:500 1.05rem/1.35 'Hanken Grotesk',system-ui,sans-serif;max-width:20ch}"
+    },
+    {
+      "name": "Lame d'avis",
+      "kind": "card",
+      "refersTo": "blade-avis",
+      "description": "Carte d'éventail : nom en display, texte intégral de la cliente.",
+      "html": "<article class=\"ds-blade\"><h3>Justine Robilliart</h3><blockquote>Cela fait plus d'un an que je vais chez Maryna et c'est toujours un sans faute.</blockquote></article>",
+      "css": ".ds-blade{width:320px;padding:28px;border-radius:16px;background:#C8123F;color:#FFF9FB;box-shadow:0 30px 44px -24px rgba(59,7,22,.55);font-family:'Hanken Grotesk',system-ui,sans-serif}.ds-blade h3{margin:0 0 14px;font:400 1.6rem/1.05 'Caprasimo',Georgia,serif}.ds-blade blockquote{margin:0;line-height:1.6}"
+    },
+    {
+      "name": "Lien souligné",
+      "kind": "nav",
+      "refersTo": "button-accent",
+      "description": "Lien de navigation : filet fin permanent, trait épais qui se dessine au survol.",
+      "html": "<a class=\"ds-ulink\" href=\"#\">Prestations</a>",
+      "css": ".ds-ulink{color:#3B0716;font:600 .98rem 'Hanken Grotesk',system-ui,sans-serif;text-decoration:none;padding-bottom:3px;background:linear-gradient(#C8123F,#C8123F) 0 100%/0% 2px no-repeat,linear-gradient(rgba(59,7,22,.45),rgba(59,7,22,.45)) 0 100%/100% 1px no-repeat;transition:background-size .45s cubic-bezier(.23,1,.32,1)}.ds-ulink:hover,.ds-ulink:focus-visible{background-size:100% 2px,100% 1px}.ds-ulink:focus-visible{outline:3px solid #C8123F;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le Nuancier",
+    "overview": "Un présentoir de teintes de manucure, agrandi à l'échelle d'un site. Chaque section est une teinte posée à plat, chaque numéro cite le nuancier, et choisir un échantillon repeint la page. Le système est chaleureux et féminin sans être sucré : la couleur est franche, la typographie est ronde et épaisse comme un gel brillant, et les photos de vraies mains sont les seules images.\n\nLa densité est généreuse : grands aplats, titres géants, beaucoup d'air, puis un détail précis (une étiquette de teinte, une goutte de vernis). Le mouvement est une couche ajoutée : tout est lisible sans lui.",
+    "keyCharacteristics": [
+      "Aplats pleins de six teintes, jamais de dégradé entre sections.",
+      "Trois formes d'ongle (ovale, carré, amande) comme seuls masques.",
+      "Étiquettes de teinte numérotées (N°01 à N°07) comme signature récurrente.",
+      "Coutures de sections en bords de vernis qui coule.",
+      "Display épais et rond, texte neutre et précis."
+    ],
+    "rules": [
+      {
+        "name": "The One Shade Rule",
+        "body": "Chaque section prend exactement une teinte de fond et en tire tous ses rôles (fond, encre, accent, surface douce). On change de teinte à la couture, jamais au milieu d'une section."
+      },
+      {
+        "name": "The Shade Number Rule",
+        "body": "Un « N° » cite toujours le nuancier : 01 Fuchsia, 02 Griotte miroir, 03 Dragée, 04 Cerise, 05 Givre, 06 Griotte, 07 Neige. Il ne numérote jamais des sections."
+      },
+      {
+        "name": "The Tabular Tag Rule",
+        "body": "Les numéros de teinte et les chiffres animés utilisent des chiffres tabulaires pour ne pas bouger pendant le comptage."
+      },
+      {
+        "name": "The One Elevation Rule",
+        "body": "Un élément porte soit une ombre, soit une bordure, jamais les deux. Aucune ombre dure ni halo coloré."
+      },
+      {
+        "name": "The Lacquer Seam Rule",
+        "body": "Une section en recouvre la suivante par un bord de gouttes dans sa propre teinte. Pas de séparateur droit."
+      }
+    ],
+    "dos": [
+      "Do donner à chaque section une teinte pleine et en dériver tous les rôles (fond, encre, accent).",
+      "Do garder tout texte à 4,5:1 au moins ; vérifié pour chaque paire teinte/encre.",
+      "Do animer seulement `transform`, `opacity`, `clip-path` ; courbes ease-out fortes (`cubic-bezier(0.23, 1, 0.32, 1)`).",
+      "Do prévoir une version calme : `prefers-reduced-motion` supprime scroll lissé, pins, loader et marquee défilant."
+    ],
+    "donts": [
+      "Don't utiliser de crème, de beige ou de noir pur : le clair est le blanc neige rosé, le sombre est la griotte.",
+      "Don't utiliser un serif fin à fort contraste ni une écriture cursive pour le display.",
+      "Don't poser de dégradé de fond ni de texte en dégradé.",
+      "Don't numéroter des sections ni agrandir une photo au-delà de sa résolution utile.",
+      "Don't inventer prix, chiffres, avis ou réseaux sociaux."
+    ]
+  }
+}
